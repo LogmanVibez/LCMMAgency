@@ -57,7 +57,7 @@
         function copyEmail() {
             var emailSubject = document.getElementById('emailSubject').textContent;
             var emailBody = document.getElementById('emailBody').textContent;
-            var emailText = emailSubject + "\n\n" + emailBody;
+            var emailText = emailBody;
             navigator.clipboard.writeText(emailText).then(function () {
                 alert('Email copied to clipboard!');
             });
